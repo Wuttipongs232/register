@@ -2,10 +2,10 @@
     require "connect.php";
 
     $sql = "SELECT *
-            FROM student AS s
-            INNER JOIN register AS r ON s.studentID = r.studentID
-            INNER JOIN registerdetail AS rd ON r.RegisID = rd.RegisID
-            INNER JOIN course AS c ON rd.courseID = c.courseID";
+            FROM student 
+            INNER JOIN register ON student.studentID = register.studentID
+            INNER JOIN registerdetail ON register.RegisID = registerdetail.RegisID
+            INNER JOIN course= ON registerdetail.courseID = course.courseID";
 
     $stmt = $conn->prepare($sql);
     $stmt->execute();
