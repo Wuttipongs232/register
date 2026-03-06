@@ -58,10 +58,11 @@
       </tr>
     </table>
 
-<?php elseif ($strStudentID != ""): ?>
+elseif ($strStudentID != ""): 
     <p style="color:red;">ไม่พบรหัสนักศึกษา: <?php echo htmlspecialchars($strStudentID); ?></p>
-<?php endif; ?>
+endif;
 
 </body>
 
 </html>
+
