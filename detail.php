@@ -54,7 +54,7 @@
       </tr>
       <tr>
         <th align="left">เทอม / ปีการศึกษา</th>
-        <td><?php echo $result["term"] . " / " . $result["years"]; ?></td>
+        <td><?php echo $result["term"]." / ".$result["years"]; ?></td>
       </tr>
     </table>
 
@@ -63,4 +63,5 @@
 <?php endif; ?>
 
 </body>
+
 </html>
